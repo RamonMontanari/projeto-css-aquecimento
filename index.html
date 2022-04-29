@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ramon Montanari</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/r-n.jpg" alt="logo do ramon" >
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/RamonMontanari">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/ramon-montanari-cardoso-828788b1/">LinkedIn</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:teste@teste.com">E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11987654321">WhatsApp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Ramon Montanari</h1>
+                <h4>Front-End Developer</h4>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum animi facere molestiae minus praesentium voluptatibus autem qui, esse, mollitia sit ad vero, minima beatae architecto ullam iste aut perferendis!
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
